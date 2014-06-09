@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.17" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AXButtonDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button appearanceType="aqua" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAp-Eb-1g6" userLabel="Button 1">
+                                <rect key="frame" x="160" y="164" width="160" height="44"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pe3-31-Axj"/>
+                                </connections>
+                            </button>
+                            <view appearanceType="aqua" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLF-db-e0i" userLabel="Button 2" customClass="AXKButton">
+                                <rect key="frame" x="160" y="218" width="160" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Gt2-jK-ORz"/>
+                                    <constraint firstAttribute="width" constant="160" id="gcK-ev-st4"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lVM-eK-dVT"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7jc-Hr-Gda" userLabel="Button 3" customClass="AXKButton">
+                                <rect key="frame" x="160" y="272" width="160" height="44"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7gy-5j-J0n"/>
+                                </connections>
+                            </view>
+                            <view appearanceType="aqua" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18i-VG-gYU" userLabel="Button 4" customClass="AXKTranslucentButton">
+                                <rect key="frame" x="160" y="326" width="160" height="44"/>
+                                <connections>
+                                    <action selector="didTapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6sb-IA-dlG"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.80000001192092896" blue="0.40000000596046448" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="7jc-Hr-Gda" firstAttribute="top" secondItem="mLF-db-e0i" secondAttribute="bottom" constant="10" id="7EF-gF-WeI"/>
+                            <constraint firstItem="7jc-Hr-Gda" firstAttribute="height" secondItem="mLF-db-e0i" secondAttribute="height" id="8pe-CI-rEA"/>
+                            <constraint firstItem="mLF-db-e0i" firstAttribute="top" secondItem="RAp-Eb-1g6" secondAttribute="bottom" constant="10" id="9bg-WC-zvs"/>
+                            <constraint firstItem="18i-VG-gYU" firstAttribute="top" secondItem="7jc-Hr-Gda" secondAttribute="bottom" constant="10" id="DvK-Rj-fcS"/>
+                            <constraint firstAttribute="centerX" secondItem="mLF-db-e0i" secondAttribute="centerX" id="GtV-yv-Ab9"/>
+                            <constraint firstItem="7jc-Hr-Gda" firstAttribute="centerX" secondItem="mLF-db-e0i" secondAttribute="centerX" id="Vw9-rG-gPi"/>
+                            <constraint firstItem="mLF-db-e0i" firstAttribute="height" secondItem="RAp-Eb-1g6" secondAttribute="height" id="ZLi-j5-hUO"/>
+                            <constraint firstItem="7jc-Hr-Gda" firstAttribute="height" secondItem="18i-VG-gYU" secondAttribute="height" id="ZVN-OP-kTF"/>
+                            <constraint firstAttribute="centerX" secondItem="RAp-Eb-1g6" secondAttribute="centerX" id="aXM-Y2-wEA"/>
+                            <constraint firstAttribute="centerX" secondItem="mLF-db-e0i" secondAttribute="centerX" id="bUH-nA-Rld"/>
+                            <constraint firstItem="mLF-db-e0i" firstAttribute="width" secondItem="RAp-Eb-1g6" secondAttribute="width" id="d1P-iw-luK"/>
+                            <constraint firstItem="7jc-Hr-Gda" firstAttribute="centerX" secondItem="18i-VG-gYU" secondAttribute="centerX" id="gu7-Tv-c94"/>
+                            <constraint firstItem="7jc-Hr-Gda" firstAttribute="width" secondItem="mLF-db-e0i" secondAttribute="width" id="j8i-Q2-0So"/>
+                            <constraint firstItem="7jc-Hr-Gda" firstAttribute="width" secondItem="18i-VG-gYU" secondAttribute="width" id="vTe-ce-9rM"/>
+                            <constraint firstAttribute="centerY" secondItem="mLF-db-e0i" secondAttribute="centerY" id="zMg-oD-icD"/>
+                        </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="RAp-Eb-1g6" id="5SD-pK-TSF"/>
+                        <outlet property="button2" destination="mLF-db-e0i" id="S1Y-pj-BZB"/>
+                        <outlet property="button3" destination="7jc-Hr-Gda" id="kTG-vH-YmO"/>
+                        <outlet property="button4" destination="18i-VG-gYU" id="SsU-I4-zs5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
