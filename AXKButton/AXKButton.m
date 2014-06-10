@@ -29,7 +29,6 @@
 
 + (NSDictionary *)defaults {
   return @{@"backgroundColor"      : [NSNull null],
-           @"titleLabel.textColor" : [NSNull null],
            @"iconView.fillColor"   : [NSNull null],
            @"iconView.strokeColor" : [NSNull null]};
 }
