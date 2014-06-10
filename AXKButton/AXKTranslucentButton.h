@@ -16,6 +16,9 @@ IB_DESIGNABLE
 - (UIColor *)backgroundColorForState:(UIControlState)state;
 - (void)setBackgroundColor:(UIColor *)backgroundColor forState:(UIControlState)state;
 
+- (NSAttributedString *)attributedTitleForState:(UIControlState)state;
+- (void)setAttributedTitle:(NSAttributedString *)title forState:(UIControlState)state;
+
 - (NSString *)titleForState:(UIControlState)state;
 - (void)setTitle:(NSString *)title forState:(UIControlState)state;
 
