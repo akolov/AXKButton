@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B530A744AE64B278983C777 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 236DE3C524F14ECD80F8E4C3 /* libPods.a */; };
 		FA0057601945FCF8005DCFDA /* AXKShapeView.h in Headers */ = {isa = PBXBuildFile; fileRef = FA00575E1945FCF8005DCFDA /* AXKShapeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA0057611945FCF8005DCFDA /* AXKShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA00575F1945FCF8005DCFDA /* AXKShapeView.m */; };
 		FA1482E419465C7E00C0877D /* AXKBaseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1482E219465C7E00C0877D /* AXKBaseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA1482E519465C7E00C0877D /* AXKBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1482E319465C7E00C0877D /* AXKBaseButton.m */; };
+		FA48A09E19473B8900C112AC /* AXKBaseButton+RACCommandSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = FA48A09C19473B8900C112AC /* AXKBaseButton+RACCommandSupport.h */; };
+		FA48A09F19473B8900C112AC /* AXKBaseButton+RACCommandSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = FA48A09D19473B8900C112AC /* AXKBaseButton+RACCommandSupport.m */; };
+		FA48A0A319473E2000C112AC /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA48A0A219473E2000C112AC /* Podfile */; };
+		FA48A0A519473E5900C112AC /* AXKButton.podspec in Resources */ = {isa = PBXBuildFile; fileRef = FA48A0A419473E5900C112AC /* AXKButton.podspec */; };
 		FA7283491945281E00439DF4 /* AXKButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA72833D1945281E00439DF4 /* AXKButton.framework */; };
 		FA7283501945281E00439DF4 /* AXKButtonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FA72834F1945281E00439DF4 /* AXKButtonTests.m */; };
 		FA72838E1945290500439DF4 /* AXKButton.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7283841945290500439DF4 /* AXKButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,10 +35,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		236DE3C524F14ECD80F8E4C3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFBFD51B4FA349F6BC9520E0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		FA00575E1945FCF8005DCFDA /* AXKShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXKShapeView.h; sourceTree = "<group>"; };
 		FA00575F1945FCF8005DCFDA /* AXKShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXKShapeView.m; sourceTree = "<group>"; };
 		FA1482E219465C7E00C0877D /* AXKBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXKBaseButton.h; sourceTree = "<group>"; };
 		FA1482E319465C7E00C0877D /* AXKBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXKBaseButton.m; sourceTree = "<group>"; };
+		FA48A09C19473B8900C112AC /* AXKBaseButton+RACCommandSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AXKBaseButton+RACCommandSupport.h"; sourceTree = "<group>"; };
+		FA48A09D19473B8900C112AC /* AXKBaseButton+RACCommandSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AXKBaseButton+RACCommandSupport.m"; sourceTree = "<group>"; };
+		FA48A0A219473E2000C112AC /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FA48A0A419473E5900C112AC /* AXKButton.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AXKButton.podspec; sourceTree = SOURCE_ROOT; };
 		FA72833D1945281E00439DF4 /* AXKButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AXKButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7283411945281E00439DF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7283481945281E00439DF4 /* AXKButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AXKButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B530A744AE64B278983C777 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,12 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D21A510DE3CE47328AA7D633 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				236DE3C524F14ECD80F8E4C3 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA7283331945281E00439DF4 = {
 			isa = PBXGroup;
 			children = (
 				FA72833F1945281E00439DF4 /* AXKButton */,
 				FA72834C1945281E00439DF4 /* AXKButtonTests */,
 				FA72833E1945281E00439DF4 /* Products */,
+				EFBFD51B4FA349F6BC9520E0 /* Pods.xcconfig */,
+				D21A510DE3CE47328AA7D633 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +115,8 @@
 				FA72838D1945290500439DF4 /* AXKTranslucentButton.m */,
 				FA00575E1945FCF8005DCFDA /* AXKShapeView.h */,
 				FA00575F1945FCF8005DCFDA /* AXKShapeView.m */,
+				FA48A09C19473B8900C112AC /* AXKBaseButton+RACCommandSupport.h */,
+				FA48A09D19473B8900C112AC /* AXKBaseButton+RACCommandSupport.m */,
 				FA7283401945281E00439DF4 /* Supporting Files */,
 			);
 			path = AXKButton;
@@ -101,6 +125,8 @@
 		FA7283401945281E00439DF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA48A0A419473E5900C112AC /* AXKButton.podspec */,
+				FA48A0A219473E2000C112AC /* Podfile */,
 				FA7283411945281E00439DF4 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -131,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA1482E419465C7E00C0877D /* AXKBaseButton.h in Headers */,
+				FA48A09E19473B8900C112AC /* AXKBaseButton+RACCommandSupport.h in Headers */,
 				FA0057601945FCF8005DCFDA /* AXKShapeView.h in Headers */,
 				FA7283961945290500439DF4 /* AXKTranslucentButton.h in Headers */,
 				FA72838E1945290500439DF4 /* AXKButton.h in Headers */,
@@ -144,10 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA7283531945281E00439DF4 /* Build configuration list for PBXNativeTarget "AXKButton" */;
 			buildPhases = (
+				91858DFF0C214E259E8E7EA3 /* Check Pods Manifest.lock */,
 				FA7283381945281E00439DF4 /* Sources */,
 				FA7283391945281E00439DF4 /* Frameworks */,
 				FA72833A1945281E00439DF4 /* Headers */,
 				FA72833B1945281E00439DF4 /* Resources */,
+				CA3F00FD67AE4F43ADD12FCA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +246,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA48A0A319473E2000C112AC /* Podfile in Resources */,
+				FA48A0A519473E5900C112AC /* AXKButton.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,12 +260,46 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		91858DFF0C214E259E8E7EA3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CA3F00FD67AE4F43ADD12FCA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA7283381945281E00439DF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FA0057611945FCF8005DCFDA /* AXKShapeView.m in Sources */,
+				FA48A09F19473B8900C112AC /* AXKBaseButton+RACCommandSupport.m in Sources */,
 				FA1482E519465C7E00C0877D /* AXKBaseButton.m in Sources */,
 				FA72838F1945290500439DF4 /* AXKButton.m in Sources */,
 				FA7283971945290500439DF4 /* AXKTranslucentButton.m in Sources */,
@@ -348,6 +413,7 @@
 		};
 		FA7283541945281E00439DF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFBFD51B4FA349F6BC9520E0 /* Pods.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -363,6 +429,7 @@
 		};
 		FA7283551945281E00439DF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFBFD51B4FA349F6BC9520E0 /* Pods.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
