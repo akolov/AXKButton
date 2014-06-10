@@ -38,20 +38,23 @@ class ViewController: UIViewController {
     button2.setIconFillColor(UIColor.clearColor(), forState: UIControlState.Selected | UIControlState.Highlighted)
     button2.setBackgroundColor(UIColor.lightGrayColor(), forState: UIControlState.Selected | UIControlState.Highlighted)
 
-    let attributes = [NSFontAttributeName: UIFont.italicSystemFontOfSize(12),
-      NSForegroundColorAttributeName: UIColor.redColor()]
-    let attributedString = NSAttributedString(string: "Button 3", attributes: attributes)
+    let normalAttributedString = NSAttributedString(string: "Button 3",
+      attributes: [NSFontAttributeName: UIFont.italicSystemFontOfSize(12),
+        NSForegroundColorAttributeName: UIColor.redColor()])
+
+    let highlightedAttributedString = NSAttributedString(string: "Button 3",
+      attributes: [NSFontAttributeName: UIFont.italicSystemFontOfSize(12),
+        NSForegroundColorAttributeName: UIColor.lightGrayColor()])
+
+    let selectedAttributedString = NSAttributedString(string: "Button 3",
+      attributes: [NSFontAttributeName: UIFont.italicSystemFontOfSize(12),
+        NSForegroundColorAttributeName: UIColor.whiteColor()])
 
     button3.layer.cornerRadius = 5
-    button3.setAttributedTitle(attributedString, forState: UIControlState.Normal)
-    button3.setTitleColor(self.view.tintColor, forState: UIControlState.Normal)
-    button3.setIconFillColor(self.view.tintColor, forState: UIControlState.Normal)
-    button3.setTitleColor(UIColor.lightGrayColor(), forState: UIControlState.Highlighted)
-    button3.setIconFillColor(UIColor.lightGrayColor(), forState: UIControlState.Highlighted)
+    button3.setAttributedTitle(normalAttributedString, forState: UIControlState.Normal)
+    button3.setAttributedTitle(highlightedAttributedString, forState: UIControlState.Highlighted)
+    button3.setAttributedTitle(selectedAttributedString, forState: UIControlState.Selected)
     button3.setBackgroundColor(self.view.tintColor, forState: UIControlState.Selected)
-    button3.setTitleColor(UIColor.whiteColor(), forState: UIControlState.Selected)
-    button3.setIconFillColor(UIColor.clearColor(), forState: UIControlState.Selected)
-    button3.setIconStrokeColor(UIColor.whiteColor(), forState: UIControlState.Selected)
 
     button4.layer.cornerRadius = 5
     button4.layer.masksToBounds = true
