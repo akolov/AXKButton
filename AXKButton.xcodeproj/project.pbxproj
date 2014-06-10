@@ -109,14 +109,14 @@
 			children = (
 				FA1482E219465C7E00C0877D /* AXKBaseButton.h */,
 				FA1482E319465C7E00C0877D /* AXKBaseButton.m */,
+				FA48A09C19473B8900C112AC /* AXKBaseButton+RACCommandSupport.h */,
+				FA48A09D19473B8900C112AC /* AXKBaseButton+RACCommandSupport.m */,
 				FA7283841945290500439DF4 /* AXKButton.h */,
 				FA7283851945290500439DF4 /* AXKButton.m */,
 				FA72838C1945290500439DF4 /* AXKTranslucentButton.h */,
 				FA72838D1945290500439DF4 /* AXKTranslucentButton.m */,
 				FA00575E1945FCF8005DCFDA /* AXKShapeView.h */,
 				FA00575F1945FCF8005DCFDA /* AXKShapeView.m */,
-				FA48A09C19473B8900C112AC /* AXKBaseButton+RACCommandSupport.h */,
-				FA48A09D19473B8900C112AC /* AXKBaseButton+RACCommandSupport.m */,
 				FA7283401945281E00439DF4 /* Supporting Files */,
 			);
 			path = AXKButton;
