@@ -11,10 +11,10 @@ import AXKButton
 
 class ViewController: UIViewController {
 
-  @IBOutlet var button1: UIButton
-  @IBOutlet var button2: AXKButton
-  @IBOutlet var button3: AXKButton
-  @IBOutlet var button4: AXKTranslucentButton
+  @IBOutlet var button1: UIButton!
+  @IBOutlet var button2: AXKButton!
+  @IBOutlet var button3: AXKButton!
+  @IBOutlet var button4: AXKTranslucentButton!
                             
   override func viewDidLoad() {
     super.viewDidLoad()
