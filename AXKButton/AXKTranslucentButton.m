@@ -13,13 +13,13 @@
 @property (nonatomic, strong) NSAttributedString *attributedText;
 @property (nonatomic, strong) NSString *text;
 
-static inline void constructor(AXKTranslucentButton *self);
+static inline void constructor(AXKTranslucentButton *const self);
 
 @end
 
 @implementation AXKTranslucentButton
 
-static inline void constructor(AXKTranslucentButton *self) {
+static inline void constructor(AXKTranslucentButton *const self) {
   self.font = [UIFont systemFontOfSize:[UIFont systemFontSize]];
 }
 
